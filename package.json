@@ -1,0 +1,50 @@
+{
+  "name": "webdesk-client",
+  "version": "1.0.0",
+  "description": "Desktop application for connecting to a web server",
+  "main": "main.js",
+  "homepage": "",
+  "author": {
+    "name": "DX Suporte - Danilo Xavier",
+    "email": "dxsuporteti@gmail.com",
+    "url": "https://dxsuporte.com.br"
+  },
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder",
+    "build-linux": "electron-builder --linux",
+    "build-win": "electron-builder --win"
+  },
+  "build": {
+    "productName": "WebDesk Client",
+    "asar": false,
+    "linux": {
+      "icon": "./img/favicon.svg",
+      "target": [
+        "deb"
+      ]
+    },
+    "win": {
+      "icon": "./img/favicon.ico",
+      "target": [
+        "nsis"
+      ]
+    }
+  },
+  "prettier": {
+    "trailingComma": "es5",
+    "semi": false,
+    "singleQuote": true,
+    "useTabs": false,
+    "quoteProps": "consistent",
+    "bracketSpacing": true,
+    "arrowParens": "always",
+    "printWidth": 100
+  },
+  "devDependencies": {
+    "electron": "^29.1.1",
+    "electron-builder": "^24.13.3",
+    "prettier": "3.2.5"
+  }
+}
