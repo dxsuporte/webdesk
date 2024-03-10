@@ -1,6 +1,6 @@
 {
   "name": "webdesk-client",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Desktop application for connecting to a web server",
   "main": "main.js",
   "homepage": "",
@@ -22,13 +22,15 @@
     "linux": {
       "icon": "./img/favicon.svg",
       "target": [
-        "deb"
+        "deb",
+        "tar.bz2"
       ]
     },
     "win": {
       "icon": "./img/favicon.ico",
       "target": [
-        "nsis"
+        "nsis",
+        "zip"
       ]
     }
   },
