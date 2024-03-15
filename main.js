@@ -11,8 +11,10 @@ const icon = nativeImage.createFromPath(path.join(__dirname, './img/favicon.png'
 const createWindow = () => {
   const win = new BrowserWindow({
     icon: icon,
-    minWidth: 1024,
-    minHeight: 768,
+    width: 1024,
+    height: 768,
+    minWidth: 800,
+    minHeight: 600,
     show: false,
     autoHideMenuBar: true,
     webPreferences: {
