@@ -1,11 +1,11 @@
 //Modules for electron
 const { app, BrowserWindow, nativeImage } = require('electron')
 //Global variables
-const config = require('./config')
+const Config = require('./config')
 //File and directory
-const path = require('path')
+const Path = require('path')
 //Ico Default
-const icon = nativeImage.createFromPath(path.join(__dirname, './img/favicon.png'))
+const icon = nativeImage.createFromPath(Path.join(__dirname, './img/favicon.png'))
 
 //Electron Window
 const createWindow = () => {
@@ -21,8 +21,8 @@ const createWindow = () => {
       devTools: false,
     },
   })
-  if (config.HOST) {
-    win.loadURL(`http://${config.HOST}:${config.PORT}`)
+  if (Config.HOST) {
+    win.loadURL(`http://${Config.HOST}:${Config.PORT}`)
   } else {
     win.loadFile('index.html')
   }
