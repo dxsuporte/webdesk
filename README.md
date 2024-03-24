@@ -3,6 +3,7 @@
 Aplicativo de desktop para conexão com um servidor web
 
 ## Instalação
+
 ```shell
 git clone https://github.com/dxsuporte/webdesk-client
 ```
@@ -11,8 +12,27 @@ git clone https://github.com/dxsuporte/webdesk-client
 cd webdesk-client
 ```
 
-# Compilação
+```shell
+npm install
+```
 
+## Compilação
+
+```shell
+npm run build
+```
+
+### Linux
+
+```shell
+npm run build-linux
+```
+
+### Windows
+
+```shell
+npm run build-win
+```
 
 ## Licença
 
