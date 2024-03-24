@@ -22,13 +22,7 @@ npm install
 npm run build
 ```
 
-Linux:\_\_ _`shell npm run build-linux `._
-
-### Windows
-
-```shell
-npm run build-win
-```
+Linux: _`npm run build-linux`_ Windows: _`npm run build-win`_
 
 ## Licença
 
