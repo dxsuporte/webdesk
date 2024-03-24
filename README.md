@@ -2,6 +2,12 @@
 
 Aplicativo de desktop para conexão com um servidor web
 
+## Pré-requisitos
+
+- Node.js V18.19.1 ou superior
+- NPM V10.5.0 ou superior
+- electron e electron-build
+
 ## Instalação
 
 ```shell
