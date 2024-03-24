@@ -1,7 +1,10 @@
 {
   "name": "webdesk-client",
+  "productName": "WebDesk Client",
   "version": "1.0.2",
   "description": "Desktop application for connecting to a web server",
+  "license": "MIT",
+  "repository": "https://github.com/dxsuporte/webdesk-client",
   "main": "main.js",
   "homepage": "",
   "author": {
@@ -9,7 +12,6 @@
     "email": "dxsuporteti@gmail.com",
     "url": "https://dxsuporte.com.br"
   },
-  "license": "MIT",
   "scripts": {
     "start": "electron .",
     "build": "electron-builder",
@@ -17,20 +19,43 @@
     "build-win": "electron-builder --win"
   },
   "build": {
-    "productName": "WebDesk Client",
+    "appId": "com.dxsuporte.${name}",
+    "artifactName": "${productName}-${version}-${os}_${arch}.${ext}",
     "asar": false,
+    "buildDependenciesFromSource": true,
+    "asarUnpack": "**\\*.{node,dll}",
     "linux": {
       "icon": "./img/favicon.svg",
       "target": [
-        "deb",
-        "tar.bz2"
+        {
+          "target": "deb",
+          "arch": [
+            "x64"
+          ]
+        },
+        {
+          "target": "tar.bz2",
+          "arch": [
+            "x64"
+          ]
+        }
       ]
     },
     "win": {
       "icon": "./img/favicon.ico",
       "target": [
-        "nsis",
-        "zip"
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        },
+        {
+          "target": "zip",
+          "arch": [
+            "x64"
+          ]
+        }
       ]
     }
   },
