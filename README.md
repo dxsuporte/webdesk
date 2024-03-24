@@ -22,11 +22,7 @@ npm install
 npm run build
 ```
 
-### Linux
-
-```shell
-npm run build-linux
-```
+Linux:\_\_ _`shell npm run build-linux `._
 
 ### Windows
 
