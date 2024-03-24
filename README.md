@@ -2,7 +2,7 @@
 
 Aplicativo de desktop para conexão com um servidor web
 
-# Instalação
+## Instalação
 ```shell
 git clone https://github.com/dxsuporte/webdesk-client
 ```
