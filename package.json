@@ -19,7 +19,7 @@
     "build-win": "electron-builder --win"
   },
   "build": {
-    "appId": "com.dxsuporte.${name}",
+    "appId": "com.dxsuporte.webdesk-client",
     "artifactName": "${productName}-${version}-${os}_${arch}.${ext}",
     "asar": false,
     "buildDependenciesFromSource": true,
