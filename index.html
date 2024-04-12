@@ -10,7 +10,7 @@
     <meta name="keywords" content="html, css, javascript, nodejs" />
     <title>WebDesk Client</title>
     <!-- Favicons -->
-    <link href="./img/favicon.svg" rel="icon" />
+    <link href="./public/img/favicon.svg" rel="icon" />
     <!-- Style CSS -->
     <link rel="stylesheet" type="text/css" href="./style.css" />
   </head>
@@ -26,12 +26,6 @@
         <h1>WebDesk Client</h1>
         <small><b>Aplicativo de desktop para conexão com um servidor web</b></small>
         <h4>Configure o acesso no arquivo <b>CONFIG.JSON</b></h4>
-        <h5 id="pathname"></h5>
       </div>
-    </main>
-    <script>
-      const pathname = window.location.pathname.replace(/index.html/g, 'config.json')
-      document.getElementById('pathname').innerHTML = pathname
-    </script>
   </body>
 </html>

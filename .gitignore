@@ -1,7 +1,7 @@
 node_modules
-build
-dist/*-unpacked
-dist/builder-*
-dist/latest*
-dist/*.blockmap
+build/*.yml
+build/*.yaml
+build/x64/*.yml
+build/x64/*-unpacked
+build/x64/*.blockmap
 .vscode

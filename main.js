@@ -5,7 +5,7 @@ const Path = require('path')
 //Global variables
 const Config = require(Path.join(__dirname, 'config.json'))
 //Ico Default
-const icon = nativeImage.createFromPath(Path.join(__dirname, 'img/favicon.png'))
+const icon = nativeImage.createFromPath(Path.join(__dirname, 'public/img/favicon.png'))
 
 //Electron Window
 const createWindow = () => {
