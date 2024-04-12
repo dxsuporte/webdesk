@@ -1,7 +1,7 @@
 {
   "name": "webdesk-client",
   "productName": "WebDesk Client",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Desktop application for connecting to a web server",
   "license": "MIT",
   "repository": "https://github.com/dxsuporte/webdesk-client",
@@ -16,7 +16,8 @@
     "start": "electron .",
     "build": "electron-builder",
     "build-linux": "electron-builder --linux",
-    "build-win": "electron-builder --win"
+    "build-win": "electron-builder --win",
+    "compile": "npm run build-linux && npm run build-win"
   },
   "build": {
     "appId": "com.dxsuporte.webdesk-client",
