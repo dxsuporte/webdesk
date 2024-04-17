@@ -25,7 +25,7 @@
     "asar": true,
     "asarUnpack": [
       "**\\*.{node,dll}",
-      "config.json"
+      "config-url.txt"
     ],
     "buildDependenciesFromSource": true,
     "directories": {

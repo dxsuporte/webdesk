@@ -1,9 +1,12 @@
 //Modules for electron
 const { app, BrowserWindow, nativeImage } = require('electron')
-//File and directory
+//Import path and fs
 const Path = require('path')
+const Fs = require('fs')
 //Global variables
-const Config = require(Path.join(__dirname, 'config.json'))
+const HOST = Fs.readFileSync(Path.resolve(__dirname, 'config-url.txt'), 'utf8')
+//Verificar se URL é valida
+const regExp = new RegExp('^((http|https)://)[-a-zA-Z0-9@:%._\\+~#?&//=]{2,256}\\.[a-z]{2,6}\\b([-a-zA-Z0-9@:%._\\+~#?&//=]*)$')
 //Ico Default
 const icon = nativeImage.createFromPath(Path.join(__dirname, 'public/img/favicon.png'))
 
@@ -21,10 +24,10 @@ const createWindow = () => {
       devTools: false,
     },
   })
-  if (Config.HOST) {
-    win.loadURL(`http://${Config.HOST}:${Config.PORT}`)
+  if (HOST && regExp.test(HOST)) {
+    win.loadURL(HOST)
   } else {
-    win.loadFile(Path.join(__dirname, 'index.html'))
+    win.loadFile(Path.join(__dirname, 'view/index.html'))
   }
   win.maximize()
   win.show()
