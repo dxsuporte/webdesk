@@ -31,7 +31,7 @@ npm run build
 Linux: _`npm run build-linux`_ Windows: _`npm run build-win`_
 
 ### Executavel Final 
-Pasta dist: _`Linux .deb .tar.br2`_ Windows: _`Windows .exe .zip`_
+Pasta build: _`Linux .deb .tar.br2`_ Windows: _`Windows .exe .zip`_
 
 ## Licença
 
