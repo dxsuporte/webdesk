@@ -1,10 +1,10 @@
 {
-  "name": "webdesk-client",
-  "productName": "WebDesk Client",
-  "version": "1.0.5",
+  "name": "webdesk",
+  "productName": "WebDesk",
+  "version": "1.0.6",
   "description": "Desktop application for connecting to a web server",
   "license": "MIT",
-  "repository": "https://github.com/dxsuporte/webdesk-client",
+  "repository": "https://github.com/dxsuporte/webdesk",
   "main": "main.js",
   "homepage": "",
   "author": {
@@ -20,13 +20,10 @@
     "compile": "npm run build-linux && npm run build-win"
   },
   "build": {
-    "appId": "com.dxsuporte.webdesk-client",
+    "appId": "com.dxsuporte.webdesk",
     "artifactName": "${productName}-${version}-${os}_${arch}.${ext}",
     "asar": true,
-    "asarUnpack": [
-      "**\\*.{node,dll}",
-      "config-url.txt"
-    ],
+    "asarUnpack": "**\\*.{node,dll}",
     "buildDependenciesFromSource": true,
     "directories": {
       "output": "build/${arch}"

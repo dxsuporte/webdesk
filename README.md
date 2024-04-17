@@ -1,4 +1,4 @@
-# WebDesk Client
+# WebDesk
 
 Aplicativo de desktop para conexão com um servidor web
 
@@ -11,11 +11,11 @@ Aplicativo de desktop para conexão com um servidor web
 ## Instalação
 
 ```shell
-git clone https://github.com/dxsuporte/webdesk-client
+git clone https://github.com/dxsuporte/webdesk
 ```
 
 ```shell
-cd webdesk-client
+cd webdesk
 ```
 
 ```shell
