@@ -47,7 +47,7 @@ const start = async () => {
       },
     })
     //Validação de URL
-    const regExp = new RegExp('^((http|https)://)[-a-zA-Z0-9@:%._\\+~#?&//=]{2,256}\\.[a-z]{2,6}\\b([-a-zA-Z0-9@:%._\\+~#?&//=]*)$')
+    const regExp = new RegExp('^((http|https)://)(?:w{1,3}.)?[^s.]+(?:.[a-z]+)*(?::d+)?(?![^<]*(?:</w+>|/?>))(.*?)(/)?$')
     //Se BASE_HOST existir e se for uma URL valida
     if (process.env.BASE_HOST && regExp.test(process.env.BASE_HOST)) {
       await win.loadURL(process.env.BASE_HOST)
