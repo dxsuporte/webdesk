@@ -1,7 +1,7 @@
 {
   "name": "webdesk",
   "productName": "WebDesk",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Desktop application for connecting to a web server",
   "license": "MIT",
   "repository": "https://github.com/dxsuporte/webdesk",
